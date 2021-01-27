@@ -1,0 +1,24 @@
+server:
+  port: 8090
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mysql
+    username: root
+    password: Qq@111111
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    dbcp2:
+      max-wait-millis: 60000
+      initial-size: 10
+      min-idle: 2
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+  thymeleaf:
+    enabled: true
+    cache: false
+    prefix: classpath:templates/
+    mode: html5
+mybatis:
+  config-location: classpath:mybatis/mybatis.cfg.xml
+  mapper-locations: classpath:mybatis/*Mapper.xml
+  type-aliases-package: com.weixia.xblog.entities

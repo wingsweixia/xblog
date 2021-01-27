@@ -1,0 +1,11 @@
+{
+  "groups": [
+    {
+      "name": "spring.thymeleaf",
+      "type": "com.weixia.xblogmanager.config.ThymeleafProperties",
+      "sourceType": "com.weixia.xblogmanager.config.ThymeleafProperties"
+    }
+  ],
+  "properties": [],
+  "hints": []
+}
